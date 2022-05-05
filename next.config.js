@@ -5,7 +5,7 @@
 const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  assetPrefix: !debug ? '/project/' : '',
+  assetPrefix: !debug ? '/next/' : '',
   images: {
     loader: 'akamai',
     path: '/',

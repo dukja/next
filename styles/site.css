@@ -2,6 +2,10 @@ html, body, #__next {
   margin: 0;
 }
 
+#__next {
+  position: relative;
+}
+
 .bg {
   position: absolute;
   top: 0;
