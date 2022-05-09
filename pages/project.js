@@ -5,6 +5,7 @@ import classNames from "classnames"
 import styled, { css } from "styled-components"
 import { motion, useMotionValue, useTransform,useElementScroll} from "framer-motion"
 import Progress from "../component/progress"
+import Main from "./layout/main";
 const ease = "cubic-bezier(0, 0.55, 0.45, 1)"
 const projects=[
   {co:"카페24",project:"Cafe24",text:`Design System`,link:"https://www.cafe24.com/",hover:"#006EB8"},  
@@ -104,43 +105,45 @@ export default function About (){
   )
     return(
       <>
-      <div 
-      ref={cardsRef} 
-      className="pageWrap projects"
-      style={{
-        overflow:"scroll",
-        display:"flex",
-        alignItems:"center"
-      }} 
-             
-      >  
-        {projects.map((project,index)=>(
-            <motion.div 
-              className={`${className} card`}
-              key={index}
-              index={index}
-              onMouseEnter={()=>setHandle(index)}
-              onMouseLeave={()=>setHandle(undefined)} 
-              variants={cardVariant}
-              transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
-              animate={select !== undefined ? select === index ? "select" : "unSelect" : "visible"}
-              custom={index}
-            >
-              <div className="data" index={index}>{index > 8  ? `${index+1}`: `0${index+1}`}</div> 
-              <CardImg 
-                className="imgWrap" 
-                index={index}>
-                  <a className="img" style={{display:"block",width:"100%",height:"100%"}} href={project.link} target="_blank" >
-                    <div  className="project">{project.project}</div>
-                    <div className="text">{project.text}</div>                  
-                  </a>
-                  <CardText className="co data" index={index}>{project.co}</CardText>  
-                </CardImg>          
+      <Main>
+        <div 
+        ref={cardsRef} 
+        className="pageWrap projects"
+        style={{
+          overflow:"scroll",
+          display:"flex",
+          alignItems:"center"
+        }} 
               
-            </motion.div> 
-        ))}
-      </div>
-      <Progress scaleX={scrollXProgress}/>   
+        >  
+          {projects.map((project,index)=>(
+              <motion.div 
+                className={`${className} card`}
+                key={index}
+                index={index}
+                onMouseEnter={()=>setHandle(index)}
+                onMouseLeave={()=>setHandle(undefined)} 
+                variants={cardVariant}
+                transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
+                animate={select !== undefined ? select === index ? "select" : "unSelect" : "visible"}
+                custom={index}
+              >
+                <div className="data" index={index}>{index > 8  ? `${index+1}`: `0${index+1}`}</div> 
+                <CardImg 
+                  className="imgWrap" 
+                  index={index}>
+                    <a className="img" style={{display:"block",width:"100%",height:"100%"}} href={project.link} target="_blank" >
+                      <div  className="project">{project.project}</div>
+                      <div className="text">{project.text}</div>                  
+                    </a>
+                    <CardText className="co data" index={index}>{project.co}</CardText>  
+                  </CardImg>          
+                
+              </motion.div> 
+          ))}
+        </div>
+        <Progress scaleX={scrollXProgress}/>  
+      </Main>
       </>
     )
 }
