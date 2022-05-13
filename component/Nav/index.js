@@ -1,19 +1,22 @@
 import { useRouter } from 'next/router'
 import { motion, AnimateSharedLayout } from "framer-motion";
 import Link from 'next/link'
-export default function Nav(){
+import Logo from '../Logo';
+export default function Nav({scrollYProgress}){
     return(
         <>
             <AnimateSharedLayout>
                 <div className="nav pagePading">
-                    <div className='logo'>
+                    <Logo scrollYProgress={scrollYProgress}></Logo>
+                    {/* <div className='logo'>
                         <span >Platform</span><br/>
                         Designer<br/>
                         Portfolio
-                    </div>
+                    </div> */}
                     <div className='navItems'>
                         <NavItem text="about" pathname="/"/>
                         <NavItem  text="project" pathname="/project"/>
+                        <NavItem  text="motion" pathname="/motion"/>
                     </div>
                 </div>
             </AnimateSharedLayout>

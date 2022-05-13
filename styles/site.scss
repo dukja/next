@@ -66,6 +66,9 @@ html,body,#__next{
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
+    .logoNew{
+        width: 100px;
+    }
     .logo{
         line-height: 1;
         text-transform : uppercase;
@@ -106,7 +109,9 @@ html,body,#__next{
 }
 // 데스크탑
 @media screen and (min-width: $desktop){
-    #__next,.siteWrap{
+
+
+    .mainStyle{
         height: 100vh;
         overflow: hidden;
     }
