@@ -136,6 +136,14 @@ html, body, #__next {
 
 .nav .logoNew {
   width: 100px;
+  color: aqua;
+  fill: aquamarine;
+}
+
+.nav .logoNew .logoSvg {
+  fill: blue;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
 }
 
 .nav .logo {

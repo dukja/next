@@ -6,7 +6,8 @@ export default function Nav({scrollYProgress}){
     return(
         <>
             <div className="nav pagePading">
-                <Logo scrollYProgress={scrollYProgress}></Logo>
+                {scrollYProgress ? <Logo scrollYProgress={scrollYProgress}></Logo>:<Logo></Logo>}
+                
                 {/* <div className='logo'>
                     <span >Platform</span><br/>
                     Designer<br/>
