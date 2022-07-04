@@ -16,7 +16,7 @@ export default function Nav({scrollYProgress}){
                 <div className='navItems'>
                     <NavItem text="about" pathname="/"/>
                     <NavItem  text="project" pathname="/project"/>
-                    <NavItem  text="motion" pathname="/motion"/>
+                    <NavItem  text="etc" pathname="/etc"/>
                 </div>
             </div>
         </>
