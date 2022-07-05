@@ -4,11 +4,11 @@ import { gsap } from "gsap";
 import classNames from "classnames"
 import styled, { css } from "styled-components"
 import { motion, useMotionValue, useTransform,useElementScroll} from "framer-motion"
-import Progress from "../component/progress"
-import Main from "./layout/main";
+import Progress from "../../component/progress"
+import Main from "../layout/main";
 const ease = "cubic-bezier(0, 0.55, 0.45, 1)"
 const projects=[
-  {co:"카페24",project:"Cafe24",text:`Design System`,link:"https://www.cafe24.com/",hover:"#006EB8"},  
+  {co:"카페24",project:"Cafe24",text:`Design System`,link:"/etc/1.js",hover:"#006EB8"},  
   {co:"파스토",project:"FASSTO",text:`Homepage UI`,link:"https://www.fassto.ai/",hover:"#00855B"},  
   {co:"파스토",project:"FASSTO Self",text:`Fulfillment Service UI`,link:"https://www.fasstoself.com/",hover:"#00B480"},  
   {co:"파스토",project:"FASSTO App",text:`Fulfillment App UI`,link:"https://play.google.com/store/apps/details?id=ai.fassto.fms.app.com.android&hl=ko&gl=US",hover:"#00855B"},  
@@ -105,42 +105,21 @@ export default function About (){
   )
     return(
       <>
-      <Main>
+      <Main pageWraperStyle={'align-items-center'}>
         <div 
         ref={cardsRef} 
-        className="pageWrap projects"
+        className="pageWrap pagePading"
         style={{
           overflow:"scroll",
-          display:"flex",
-          alignItems:"center"
         }} 
               
         >  
-          {projects.map((project,index)=>(
-              <motion.div 
-                className={`${className} card`}
-                key={index}
-                index={index}
-                onMouseEnter={()=>setHandle(index)}
-                onMouseLeave={()=>setHandle(undefined)} 
-                variants={cardVariant}
-                transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
-                animate={select !== undefined ? select === index ? "select" : "unSelect" : "visible"}
-                custom={index}
-              >
-                <div className="data" index={index}>{index > 8  ? `${index+1}`: `0${index+1}`}</div> 
-                <CardImg 
-                  className="imgWrap" 
-                  index={index}>
-                    <a className="img" style={{display:"block",width:"100%",height:"100%"}} href={project.link} target="_blank" >
-                      <div  className="project">{project.project}</div>
-                      <div className="text">{project.text}</div>                  
-                    </a>
-                    <CardText className="co data" index={index}>{project.co}</CardText>  
-                  </CardImg>          
-                
-              </motion.div> 
-          ))}
+        <div>
+          <a href="/etc/1.js" className="t-body-sm t-weight-thin" target="_blank">Shopping Mall NextJs</a>
+        </div>
+        <div>
+          <a href="/etc/1.js" className="t-body-sm t-weight-thin" target="_blank">Shopping Mall NextJs</a>
+        </div>
         </div>
         <Progress scaleX={scrollXProgress}/>  
       </Main>

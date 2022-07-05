@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="Platform Designer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      <Main>
+      <Main pageWraperStyle={'justify-content-center align-items-center'}>
         <div className="pageMax pageWrap pagePading about">
           <div className='pageGrid'>
             <div className='cs1 ce-1 cs-lg1 ce-lg5 side'>
