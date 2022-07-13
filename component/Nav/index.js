@@ -1,22 +1,27 @@
+import React,{useEffect,useContext} from "react";
 import { useRouter } from 'next/router'
 import { motion, LayoutGroup } from "framer-motion";
 import Link from 'next/link'
 import Logo from '../Logo';
+import useSize from "../../utils/useSize";
+import { ContextLayout } from "../../utils/ContextLayout";
+
 export default function Nav({scrollYProgress}){
+    const {element, elemSize} = useSize();
+    const { setTop } = useContext(ContextLayout);
+    useEffect(()=>{
+        if(element.current){
+            setTop(elemSize)
+        }
+    },[elemSize])
     return(
         <>
-            <div className="nav pagePading">
+            <div className="nav pagePading" ref={element}>
                 {scrollYProgress ? <Logo scrollYProgress={scrollYProgress}></Logo>:<Logo></Logo>}
-                
-                {/* <div className='logo'>
-                    <span >Platform</span><br/>
-                    Designer<br/>
-                    Portfolio
-                </div> */}
                 <div className='navItems'>
                     <NavItem text="about" pathname="/"/>
-                    <NavItem  text="project" pathname="/project"/>
-                    <NavItem  text="etc" pathname="/etc"/>
+                    <NavItem  text="works" pathname="/works"/>
+                    <NavItem  text="projects" pathname="/projects"/>
                 </div>
             </div>
         </>

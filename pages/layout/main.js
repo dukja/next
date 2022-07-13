@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import classNames from 'classnames';
 import Nav from './../../component/Nav'
+import Footer from '../../component/Footer';
 
-export default function Main({children, pageWraperStyle}){
+
+export default function Main({children, pageWraperStyle,topSpacing, bottomSpacing}){
+
     useEffect(()=>{
         document.getElementById('__next').classList.add("mainStyle")
     })
@@ -11,10 +14,10 @@ export default function Main({children, pageWraperStyle}){
         <>
         <div className='dark-ink-higher siteWrap mainStyle'>
             <Nav/>
-            <div className={pageWraperClass}>
-                {children}    
+            <div className={pageWraperClass} style={{paddingTop:`${topSpacing}px`, paddingBottom:`${bottomSpacing}px`}}>
+                {children}   
             </div>
-            <div className='pagePading t-metadata-sm footer'>Dukyeon Ha</div>
+            <Footer/>
         </div>
         <div className='bg'></div>
         </>

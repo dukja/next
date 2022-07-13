@@ -1,10 +1,23 @@
+import {useEffect,useRef,useState} from "react";
 import Nav from '../component/Nav'
 import '../styles/globals.css'
 import '../styles/styles.css'
-import { motion, AnimateSharedLayout } from "framer-motion";
+import { ContextLayout } from '../utils/ContextLayout'
+
 function MyApp({ Component, pageProps }) {
+  const [topSpacing, setTop] = useState();
+  const [bottomSpacing, setBottom] = useState();
   return <>
-    <Component {...pageProps} />
+    <ContextLayout.Provider
+          value={{
+            topSpacing,
+            setTop,
+            bottomSpacing,
+            setBottom
+          }}
+    >
+      <Component {...pageProps} />
+    </ContextLayout.Provider>
   </>
 }
 

@@ -110,9 +110,18 @@ html,body,#__next{
 }
 .pageWraper{
     display: flex;
-    height: auto; 
-    min-height: calc(100vh - 155px - 41px); 
-    overflow:visible;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav,.footer{
+    position: fixed;
+}
+.nav{  
+    z-index: 99; 
+}
+.footer{  
+    bottom: 0; 
 }
 // 데스크탑
 @media screen and (min-width: $desktop){
@@ -120,29 +129,21 @@ html,body,#__next{
         height: 100vh;
         overflow: hidden;
     }
-    .nav,.footer{
-        position: fixed;
-    }
-    .nav{  
-        z-index: 99; 
-    }
-    .footer{  
-        bottom: 0; 
-    }
+
     .nav,.footer{
         padding-top: $gap-desktop;
         padding-bottom: $gap-desktop;   
     }
-    .pageWraper{
-        height: 100%;
-        display: flex;
-        // justify-content: center;  
-        // align-items: center; 
+    .about{   
+        align-items: center !important
     }
+
 }
 
 // 상세
-.about{      
+.about{   
+    display: flex;  
+    align-items: flex-start;
     .side{
         order:1;                   
         @media screen and (min-width: $desktop){
@@ -162,7 +163,7 @@ html,body,#__next{
     }    
 }
 
-.projects{
+.works{
     height: 100%;
     display: flex;
     align-items: center;   
@@ -227,7 +228,12 @@ html,body,#__next{
         }
     }
 }
-
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
 .progressBar{
     position: fixed;
     .indicator{

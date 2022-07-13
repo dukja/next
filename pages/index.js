@@ -1,9 +1,14 @@
+import React, { useState, useEffect,useContext } from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Main from "./layout/main"
+import { ContextLayout } from '../utils/ContextLayout';
+
+
 export default function Home() {
+  const {topSpacing, bottomSpacing} = useContext(ContextLayout)
   return (
       <>
       <Head>
@@ -11,8 +16,8 @@ export default function Home() {
         <meta name="description" content="Platform Designer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      <Main pageWraperStyle={'justify-content-center align-items-center'}>
-        <div className="pageMax pageWrap pagePading about">
+      <Main topSpacing={topSpacing} bottomSpacing={bottomSpacing}>
+        <div className="pageMax pagePading overflow-scroll about">
           <div className='pageGrid'>
             <div className='cs1 ce-1 cs-lg1 ce-lg5 side'>
               <div className="t-body-sm t-weight-thin">

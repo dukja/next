@@ -935,6 +935,10 @@ body.false-spacing .spacing span {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .position-relative {
   position: relative !important;
 }
@@ -946,6 +950,10 @@ body.false-spacing .spacing span {
 .position-sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
+}
+
+.position-fixed {
+  position: fixed !important;
 }
 
 .h-100 {

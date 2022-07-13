@@ -201,9 +201,21 @@ html, body, #__next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  min-height: calc(100vh - 155px - 41px);
-  overflow: visible;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav, .footer {
+  position: fixed;
+}
+
+.nav {
+  z-index: 99;
+}
+
+.footer {
+  bottom: 0;
 }
 
 @media screen and (min-width: 1136px) {
@@ -212,24 +224,23 @@ html, body, #__next {
     overflow: hidden;
   }
   .nav, .footer {
-    position: fixed;
-  }
-  .nav {
-    z-index: 99;
-  }
-  .footer {
-    bottom: 0;
-  }
-  .nav, .footer {
     padding-top: 64px;
     padding-bottom: 64px;
   }
-  .pageWraper {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .about {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about .side {
@@ -266,7 +277,7 @@ html, body, #__next {
   }
 }
 
-.projects {
+.works {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,26 +289,26 @@ html, body, #__next {
       align-self: center;
 }
 
-.projects .card:not(:last-child) {
+.works .card:not(:last-child) {
   margin-right: 64px;
 }
 
-.projects .card:first-child {
+.works .card:first-child {
   margin-left: 32px;
 }
 
-.projects .card:last-child {
+.works .card:last-child {
   margin-right: 32px;
 }
 
-.projects .project .imgWrap {
+.works .project .imgWrap {
   margin-top: 0.4rem;
   -webkit-transition: all;
   transition: all;
   position: relative;
 }
 
-.projects .project .imgWrap .img {
+.works .project .imgWrap .img {
   position: absolute;
   top: 0;
   left: 0;
@@ -309,20 +320,20 @@ html, body, #__next {
   color: white;
 }
 
-.projects .project .imgWrap .img .project {
+.works .project .imgWrap .img .project {
   padding-bottom: 0.8rem;
   font-size: 1.7rem;
   font-weight: bolder;
   line-height: 1;
 }
 
-.projects .project .imgWrap .img .text {
+.works .project .imgWrap .img .text {
   font-size: 1.2rem;
   line-height: 1.2;
   white-space: pre-wrap;
 }
 
-.projects .project .imgWrap .co {
+.works .project .imgWrap .co {
   position: absolute;
   right: 0px;
   font-size: 1.2rem;
@@ -330,15 +341,29 @@ html, body, #__next {
 }
 
 @media screen and (min-width: 1136px) {
-  .projects .card:not(:last-child) {
+  .works .card:not(:last-child) {
     margin-right: 128px;
   }
-  .projects .card:first-child {
+  .works .card:first-child {
     margin-left: 64px;
   }
-  .projects .card:last-child {
+  .works .card:last-child {
     margin-right: 64px;
   }
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
 }
 
 .progressBar {

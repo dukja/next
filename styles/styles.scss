@@ -772,6 +772,9 @@ body.false-spacing{
   &-hidden {
     overflow: hidden; 
   }
+  &-scroll{
+    overflow: scroll;
+  }
 }
 @mixin positionStyle() {
   &-relative{
@@ -783,6 +786,9 @@ body.false-spacing{
   &-sticky{
       position: sticky !important;
   }
+  &-fixed{
+    position: fixed !important;
+}
 }
 .position{
   @include positionStyle()
