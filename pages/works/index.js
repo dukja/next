@@ -108,7 +108,7 @@ export default function About (){
       <Main>
         <div 
         ref={cardsRef} 
-        className="pageWrap projects"
+        className="pageWrap works"
         style={{
           overflow:"scroll",
           display:"flex",
