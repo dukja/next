@@ -42,10 +42,10 @@ export default function Home() {
               <div className='t-display-xs p32-b'>Now&Forward</div>
               <div className='t-caption-title'>About Me</div>
               <div className="m16-b">
-                  "주로 소프트웨어 회사에서 인하우스 디자이너로서 대시보드, 앱, 웹의 UI/UX 디자인 및 퍼블리싱 작업을 했습니다. 
+                  "주로 소프트웨어 회사에서 인하우스 디자이너로서 Dashboard, App, Web의 UI/UX디자인 및 퍼블리싱 작업을 했습니다.
               </div>
               <div className="m16-b">
-              일관성·확장성을 고려한 디자인을 좋아해 디자인 시스템을 연구합니다. 디자인을 코드로 구현하는 데 관심이 많고 자바스크립트를 좋아합니다.
+              현재는 디자인 시스템을 만들고 있습니다. 디자인을 코드로 구현하는 데 관심이 많고 자바스크립트를 좋아합니다.
               </div>
               <div>
                   앞으로도 웹을 더 이해하고 효율적인 작업을 위한 디자인시스템을 구축할 것입니다."
