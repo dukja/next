@@ -41,7 +41,7 @@ export default function Header(){
                         <a href='/about'>About</a>
                     </li>
                     <li>
-                        <a href='/why'>Why work with us?</a>
+                        <a href='/why'>Why work with us</a>
                     </li>
                 </nav>
                 <div className={cx('contact')}><a href='/contact'>Let's work together</a></div>
