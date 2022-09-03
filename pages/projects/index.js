@@ -28,11 +28,11 @@ export default function About (){
       <Main topSpacing={topSpacing} bottomSpacing={bottomSpacing}>
       <div className="pagePading overflow-scroll projects">
           <div className="t-body-sm-strong p32-t position-sticky" style={{top:0}}>Projects</div>
-          <h1>
+          {/* <h1>
             <a href="/projects/1" className="t-weight-thin" target="_blank">01 Page Transitions with React Router and Framer Motion</a>
-          </h1>
+          </h1> */}
           <h1>
-            <a href="/projects/2" className="t-weight-thin" target="_blank">01 Page Transitions with React Router and Framer Motion</a>
+            <a href="/projects/2" className="t-weight-thin" target="_blank">01 Smooth Loading Transitions with Framer Motion</a>
           </h1>
         </div>
       </Main>

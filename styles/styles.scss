@@ -11,8 +11,8 @@
 body{
   // font-family: 'Noto Sans KR', sans-serif !important;
   font-family: 'Poppins', 'Noto Sans KR', sans-serif;
-  font-size: 1.7rem;
-  font-weight: $font-weight-l;
+  font-size: 1.6rem;
+  font-weight: $font-weight-t;
 }
 
 body,.light-theme{
@@ -588,98 +588,6 @@ body.false-spacing{
     line-height: $line-height-2;
   }
 
-  &-display-lg{
-    font-size: 9.6rem;
-    font-weight: $font-weight-b;
-    line-height: $line-height-12;
-    letter-spacing: $letter-spacing-l;
-  }
-  &-display-md{
-    font-size: 6.0rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-12;
-  }
-  &-display-sm{
-    font-size: 4.8rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-13;
-    letter-spacing: $letter-spacing-m;
-  }
-  &-display-xs{
-    font-size: 3.6rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-12;
-  }
-  &-chapter-subHead{
-    font-size: 3.2rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-12;   
-  }
-  &-part-subHead{
-    font-size: 2.8rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-12;   
-  }
-  &-section-subHead{
-    font-size: 2.4rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-12;   
-  }
-  &-article-subHead{
-    font-size: 2.0rem;
-    font-weight: 400;
-    font-weight: $font-weight-l;
-    line-height: $line-height-13;    
-    letter-spacing: $letter-spacing-s;
-  }
-  &-body-lg-strong{
-    font-size: 1.7rem;
-    font-weight: $font-weight-b;
-    line-height: $line-height-14;
-    letter-spacing: $letter-spacing-s;
-  }
-  &-body-lg{
-    font-size: 1.7rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-14;
-    letter-spacing: $letter-spacing-s;
-  }
-  &-body-strong{
-    font-size: 1.6rem;
-    font-weight: $font-weight-m;
-    line-height: $line-height-14;
-  }  
-  &-body{
-    font-size: 1.6rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-14;
-    letter-spacing: $letter-spacing-s
-  }
-  &-body-sm-strong{
-    font-size: 1.4rem;
-    font-weight: $font-weight-m;
-    line-height: $line-height-13;
-  }
-  &-body-sm{
-    font-size: 1.4rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-15;
-  }
-  &-metadata{
-    font-size: 1.3rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-15;
-  }
-  &-metadata-sm{
-    font-size: 1.2rem;
-    font-weight: $font-weight-l;
-    line-height: $line-height-15;
-  }
-  &-metadata-xs{
-    font-size: 1rem;
-    font-weight: $font-weight-r;
-    line-height: $line-height-15;
-  }
   &-center{
     text-align: center;
   } 

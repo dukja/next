@@ -13,7 +13,7 @@ export default function Footer(){
     },[elemSize])
     return(
         <>
-        <div className='pagePading t-metadata-sm footer' ref={element}>Dukyeon Ha</div>
+        <div className='pagePading t-caption footer' ref={element}>Dukyeon Ha</div>
         </>
     )
 }

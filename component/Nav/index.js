@@ -31,7 +31,7 @@ function NavItem ({text, pathname}) {
     const router = useRouter()
     return(
         <>
-        <div className='navItem'>
+        <div className={router.pathname === pathname ? `navItem active` : `navItem `}>
             <Link href={{pathname: pathname}} as={process.env.BACKEND_URL+`${pathname}`}>
                 {text}
             </Link>            

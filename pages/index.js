@@ -20,14 +20,14 @@ export default function Home() {
         <div className="pageMax pagePading overflow-scroll about">
           <div className='pageGrid'>
             <div className='cs1 ce-1 cs-lg1 ce-lg5 side'>
-              <div className="t-body-sm t-weight-thin">
-                  <div className="t-body-sm-strong">Working Tools</div>
+              <div>
+                  <div className="t-caption-title">Working Tools</div>
                   <div>
                         Figma, Sketch, ProtoPie, Principle, Framer, Axure, Notion, HTML5, SCSS, jquery, react, Next js, Bootstrap, StoryBook, Eclipse, Git, Jira, Slack
                   </div>                            
               </div>
-              <div className=" t-body-sm t-weight-thin">
-                  <div className="t-body-sm-strong p32-t">Experience</div>
+              <div>
+                  <div className="t-caption-title p32-t">Experience</div>
                   <ul className="list-none p0 m0">
                     <li>Cafe24 · 디자인시스템</li>
                     <li>Fassto · 풀필먼트 서비스 UI, 디자인시스템</li>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div className='cs1 ce-1 cs-lg7 ce-lg13 main'>
               <div className='t-display-xs p32-b'>Now&Forward</div>
-              <div className='t-body-sm-strong'>About Me</div>
+              <div className='t-caption-title'>About Me</div>
               <div className="m16-b">
                   "주로 소프트웨어 회사에서 인하우스 디자이너로서 대시보드, 앱, 웹의 UI/UX 디자인 및 퍼블리싱 작업을 했습니다. 
               </div>

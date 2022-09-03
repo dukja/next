@@ -1,4 +1,6 @@
 @import "./short.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
 // 공통영역
 // 모바일
 html,body,#__next{
@@ -7,6 +9,24 @@ html,body,#__next{
 #__next{
     position: relative;
 }
+.projects02{
+    background: #f0eff1;
+    font-size: 62.5%;
+    line-height: 1.25;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+    #__next {
+      height: 100% !important;
+    } 
+    p,span {
+        font-size: 1.4rem;
+    }
+    a{
+        font-weight: 600;
+    }
+} 
+  
 .bg{
     position: absolute;
     top: 0;
@@ -96,7 +116,10 @@ html,body,#__next{
                 display: block;
                 height: 2px;
                 background-color: $brand-blue;
-            }        
+            }  
+            &.active{
+                font-weight: $font-weight-m;
+            }
         }        
     }
     @media screen and (max-width: $tablet){
@@ -253,6 +276,27 @@ html,body,#__next{
             right:$gap-desktop;
             bottom: $gap-xxlg;
         }          
+    }
+}
+.t{
+    &-display-xs{
+        font-size: 3.2rem;
+        font-weight: $font-weight-r;
+    }
+    &-body-title{
+        font-size: 1.6rem;
+        font-weight: $font-weight-m;
+    }
+    &-body{
+        font-size: 1.6rem;
+        font-weight: $font-weight-r;
+    }
+    &-caption-title{
+        font-size: 1.4rem;
+        font-weight: $font-weight-m;
+    }
+    &-caption{
+        font-size: 1.4rem;
     }
 }
 
