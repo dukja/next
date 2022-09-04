@@ -14,7 +14,7 @@ const projects=[
   {co:"파스토",project:"FASSTO App",text:`Fulfillment App UI`,link:"https://play.google.com/store/apps/details?id=ai.fassto.fms.app.com.android&hl=ko&gl=US",hover:"#00855B"},  
   {co:"한위드정보기술",project:"hdaas",text:`Server Virtualization  Dashboard UI`,link:"https://sellec.kr/theme/basic/hdaas/www/php/dashboard-v1.php",hover:"#E8820D"},  
   {co:"네이버",project:"NAVER Office",text:"Cloud Office UI",link:"https://office.naver.com/",hover:"#03C75A"},
-  {co:"코디스페이스",project:"Incheon Airport",text:"Cloud Office App UI",link:"/images/Incheon-Airport.pdf",hover:"#00AAB4"},
+  {co:"코디스페이스",project:"Incheon Airport",text:"Cloud Office App UI",link:process.env.BACKEND_URL+`/src/works/Incheon-Airport.pdf`,hover:"#00AAB4"},
   {co:"코디스페이스",project:"Incheon Airport",text:"Airbeacon Admin UI",link:"https://sellec.kr/theme/basic/airbeacon/dashBoardList.html#",hover:"#00AAB4"},
   {co:"코디스페이스",project:"Incheon Airport",text:"Node Admin UI",link:"/images/node.png",hover:"#EC641F"}
 ]
