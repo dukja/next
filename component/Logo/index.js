@@ -1,5 +1,6 @@
 import React,{useEffect} from "react";
 import {motion,useTransform} from "framer-motion";
+import Link from 'next/link'
 import LogoSvg from "./../../public/svg/logo.svg";
 import LogoPlatform from "./../../public/svg/logoPlatform.svg";
 import LogoDesigner from "./../../public/svg/logoDesigner.svg";
@@ -41,10 +42,10 @@ export default function Logo ({scrollYProgress}) {
         <>
         <div className="d-flex flex-column logoNew">
             {scrollYProgress ?(
-                <LogoAnimte scrollYProgress={scrollYProgress}/>
+                <Link href={process.env.BACKEND_URL} as={process.env.BACKEND_URL}><LogoAnimte scrollYProgress={scrollYProgress}/></Link>
             ):(
                 <>
-                    <LogoDefault fill={"#3368FF"}/>
+                    <Link href={process.env.BACKEND_URL} as={process.env.BACKEND_URL}><LogoDefault fill={"#3368FF"}/></Link>
                 </>
             ) }
         </div>
