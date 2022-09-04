@@ -32,7 +32,7 @@ export default function About (){
             <a href="/projects/1" className="t-weight-thin" target="_blank">01 Page Transitions with React Router and Framer Motion</a>
           </h1> */}
           <h1>
-            <a href="/projects/2" className="t-weight-thin" target="_blank">01 Smooth Loading Transitions with Framer Motion</a>
+            <a href={process.env.BACKEND_URL+`${projects/2}`} className="t-weight-thin" target="_blank">01 Smooth Loading Transitions with Framer Motion</a>
           </h1>
         </div>
       </Main>
