@@ -57,7 +57,7 @@ export default function Loader  ({setLoading}) {
                 <motion.div variants={itemMain} className={cx('transition-image')}>
                     <motion.img
                         layoutId="main-image-1"
-                        src={`/src/projects/images/2/image-2.webp`}
+                        src={process.env.BACKEND_URL+`/projects/2/src/projects/images/2/image-2.webp`}
                     />
                 </motion.div>
                 <ImageBlock variants={item} id="image-3"/>
@@ -74,8 +74,8 @@ export function ImageBlock  ({id, variants}) {
         <>
         <motion.div variants={variants} className={cx('imageBlock', `${id}`)} >
             <Image
-                src={`/src/projects/images/2/${id}.webp`}
-                fallback={`/src/projects/images/2/${id}.jpg`}
+                src={process.env.BACKEND_URL+`/projects/2/src/projects/images/2/${id}.webp`}
+                fallback={process.env.BACKEND_URL+`/projects/2/src/projects/images/2/${id}.jpg`}
                 alt={id}
             />
         </motion.div>
