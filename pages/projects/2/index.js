@@ -35,7 +35,7 @@ export default function Index  ()  {
                     <div className={cx('transition-image', 'final')}>
                         <motion.img
                         transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                        src={`/src/projects/images/2/image-2.webp`}
+                        src={process.env.BACKEND_URL+`/src/projects/images/2/image-2.webp`}
                         layoutId='main-image-1'
                         />
                     </div>
