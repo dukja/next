@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               <div>
                   <div className="t-caption-title p32-t">Experience</div>
-                  <ul className="list-none p0 m0">
+                  <ul className="list-none p0 m0 t-caption">
                     <li>Cafe24 · 디자인시스템</li>
                     <li>Fassto · 풀필먼트 서비스 UI, 디자인시스템</li>
                     <li>CoordiSpace · 비콘위치 추적 서비스 UI</li>
