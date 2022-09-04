@@ -16,7 +16,7 @@ const projects=[
   {co:"네이버",project:"NAVER Office",text:"Cloud Office UI",link:"https://office.naver.com/",hover:"#03C75A"},
   {co:"코디스페이스",project:"Incheon Airport",text:"Cloud Office App UI",link:process.env.BACKEND_URL+`/src/works/Incheon-Airport.pdf`,hover:"#00AAB4"},
   {co:"코디스페이스",project:"Incheon Airport",text:"Airbeacon Admin UI",link:"https://sellec.kr/theme/basic/airbeacon/dashBoardList.html#",hover:"#00AAB4"},
-  {co:"코디스페이스",project:"Incheon Airport",text:"Node Admin UI",link:"/images/node.png",hover:"#EC641F"}
+  {co:"코디스페이스",project:"Incheon Airport",text:"Node Admin UI",link:process.env.BACKEND_URL+`/src/works/node.png`,hover:"#EC641F"}
 ]
 const cardVariant = {
   select:{
